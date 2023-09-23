@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/projects.css" />
+    <title>Projects</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="lefta">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact Me</a>
+        </div>
+        <div class="right">
+            <div class="logo">adesmith</div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <h2>Some of my works include:</h2>
+    <div class="gallery">
+        <div class="image-display">
+            <img id="current-image" src="/images/mw 2 logo.png" alt="Image 1">
+        </div>
+        <div class="navigation">
+            <button id="prev-button">Previous</button>
+            <span id="image-counter">1 / 6</span>
+            <button id="next-button">Next</button>
+        </div>
+        <div class="thumbnails" id="thumbnail-container">
+            <!-- Thumbnails go here -->
+        </div>
+    </div>
+
+    <div class="repository-links-container">
+        <h2>GitHub Repositories:</h2>
+        <div class="repository-links">
+            <a id="repository-name" href="#" target="_blank">Repository Name</a>
+        </div>
+        <div class="navigation">
+            <button id="prev-repo-button">Previous</button>
+            <span id="repo-counter">1 / 4</span>
+            <button id="next-repo-button">Next</button>
+        </div>
+    </div>
+
+    <script src="/script/project.js"></script>
+    <script src="/script/script.js"></script>
+
+
+</body>
+
+</html>
