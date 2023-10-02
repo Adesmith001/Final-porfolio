@@ -19,9 +19,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 2; /* Set a higher z-index to make it appear above the content */
+    z-index: 2;
 }
-
 
 .navbar a {
     font-size: 20px;
@@ -34,17 +33,16 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: coral
+    color: #2F947C;
 }
 
 .logo {
     font-size: 30px;
     color: #E6E1C5;
-    text-decoration: coral;
+    text-decoration: #2F947C;
     font-weight: 600;
 }
 
-/* Hamburger menu styles */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -59,25 +57,21 @@ body {
     transition: 0.4s;
 }
 
-
 .home {
     height: 100vh;
-    background: url('https://drive.google.com/uc?id=1bvq09BvverfmEnbk2vZMhOcBWmo7Jaja') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #2E3047;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    justify-content: flex-end;
 }
 
 .home-content {
-    max-width: 450px;
-    text-align: left;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .home-content h1 {
-    position: relative;
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
@@ -90,7 +84,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #2E3047;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -99,7 +93,7 @@ body {
     position: relative;
     font-size: 25px;
     font-weight: 700;
-    color: #71A9F7;
+    color: #3BBA9C;
 }
 
 .home-content h3::before {
@@ -109,7 +103,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #2E3047;
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
 }
@@ -117,7 +111,6 @@ body {
 .home-content p {
     position: relative;
     font-size: 16px;
-    font-style: italic;
     font-family: cursive;
     margin: 20px 0 40px;
     color: #F3F8F2;
@@ -131,7 +124,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #2E3047;
     animation: showRight 1s ease forwards;
     animation-delay: 2s;
 }
@@ -142,6 +135,7 @@ body {
     justify-content: space-between;
     max-width: 345px;
     height: 50px;
+    margin: 0 auto;
 }
 
 .home-content .btn-box::before {
@@ -151,7 +145,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #2E3047;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -164,8 +158,7 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #71A9F7;
-    /*border: 2px solid #71A9F7;*/
+    background: #3BBA9C;
     border-radius: 8px;
     font-size: 19px;
     color: #3F4B3B;
@@ -178,20 +171,20 @@ body {
 }
 
 .btn-box a:hover {
-    color: #71A9F7;
+    color: #3BBA9C;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #71A9F7;
+    color: #3BBA9C;
 }
 
 .btn-box a:nth-child(2)::before {
-    background: black;
+    background: #2E3047;
 }
 
 .btn-box a:nth-child(1):hover {
-    color: black;
+    color: #2E3047;
 }
 
 .btn-box a:nth-child(2):hover {
@@ -205,7 +198,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #71A9F7;
+    background: #3BBA9C;
     z-index: -1;
     transition: 0.5s;
 }
@@ -229,7 +222,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #2E3047;
     animation: showRight 1s ease forwards;
     animation-delay: 3.2s;
     z-index: 2;
@@ -243,10 +236,9 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    /*border: 2px solid #71A9F7; */
     border-radius: 50%;
     font-size: 20px;
-    color: #71A9F7;
+    color: #3BBA9C;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -264,7 +256,6 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    /*background: #71A9F7;*/
     z-index: -1;
     transition: .5s;
 }
@@ -273,39 +264,8 @@ body {
     width: 100%;
 }
 
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 700px;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-    animation: manipActiveHover .1s forwards;
-    animation-delay: 5s;
-    pointer-events: none;
-}
-
-.home-imgHover:hover {
-    background: black;
-    opacity: .6;
-}
-
-.home-imgHover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 102%;
-    height: 100%;
-    background: black;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3.9s;
-    z-index: 1000;
-}
-
 .btn-box a:nth-child(1) {
-    background-color: black;
+    background-color: #2E3047;
     color: white;
 }
 
@@ -326,7 +286,7 @@ body {
 }
 
 .btn-box a:nth-child(2) {
-    background-color: #71A9F7;
+    background-color: #3BBA9C;
     color: white;
 }
 
@@ -344,6 +304,72 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
+}
+
+footer {
+    background-color: #595e76;
+}
+
+footer p {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    color: #F3F8F2;
+}
+
+.footer-link a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #3BBA9C;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    padding-left: 20px;
+}
+
+.footer-link a:hover {
+    color: white;
+}
+
+.footer-link a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-link a:hover::before {
+    width: 100%;
+}
+
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #2F947C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#goToTopBtn:hover {
+    background-color: #3BBA9C;
 }
 
 @keyframes showRight {
@@ -367,7 +393,7 @@ body {
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 60px; /* Adjust this value to control the distance from the top */
+        top: 60px;
         left: 0;
         width: 50%;
         z-index: 1;
@@ -383,7 +409,7 @@ body {
     }
 
     .navbar .lefta.active {
-        display: flex; /* Show the links when the .active class is added */
+        display: flex;
     }
 
     .menu-icon {

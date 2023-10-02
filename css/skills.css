@@ -1,6 +1,5 @@
 .skills-page{
-    background: url('https://drive.google.com/uc?id=1qRwEKzbJFdN0rxLjLTtCmO-pYya3H6B7') no-repeat;
-    background-size: cover;
+    background-color: #43455c;
     overflow-x: hidden;
     z-index: 1;
 }
@@ -19,9 +18,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 2; /* Set a higher z-index to make it appear above the content */
+    z-index: 2;
 }
-
 
 .navbar a {
     font-size: 20px;
@@ -34,17 +32,16 @@
 
 .navbar a:hover,
 .navbar a.active {
-    color: coral
+    color: #2F947C;
 }
 
 .logo {
     font-size: 30px;
     color: #E6E1C5;
-    text-decoration: coral;
+    text-decoration: #2F947C;
     font-weight: 600;
 }
 
-/* Hamburger menu styles */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -61,21 +58,19 @@
 
 p {
     text-align: center;
-    color: #f2f2f2;
+    color: #3BBA9C;
     font-size: 25px;
 }
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Three columns */
-    grid-template-rows: repeat(2, auto); /* Two rows */
-    grid-gap: 20px; /* Spacing between items */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 40px;
     padding: 40px;
-    border: 2px solid #ccc;
     border-radius: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    /* background: url('/images/skillbg.jpg') no-repeat; */
     backdrop-filter: blur(5px);
     background-size: cover;
     margin-bottom: 40px;
@@ -83,7 +78,20 @@ p {
 
 .skill {
     margin: 10px 0;
-    text-align: center; /* Center align the content */
+    text-align: center;
+    color: #999999;
+    background-color: rgba(225, 225, 225, .8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(225, 225, 225, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skill:hover {
+    background-color: #36374a;
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #f2f2f2;
 }
 
 .skill p {
@@ -95,13 +103,12 @@ p {
 }
 
 .skills-work{
-    color: #f2f2f2;
     font-size: 17px;
     text-align: left;
 }
 
 .skills-work a{
-    color: #f2f2f2;
+    color: #999999;
 }
 
 .skills-work a:hover{
@@ -111,69 +118,66 @@ p {
 .progress-text {
     position: absolute;
     top: 0;
-    left: 165px;
+    left: 145px;
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 18px; /* Adjust as needed to vertically center the text */
-    color: #fff; /* Text color */
-    pointer-events: none; /* Prevent text from interfering with clicking on progress bar */
+    line-height: 18px;
+    color: #fff;
+    pointer-events: none;
 }
 
 .progress-textw {
     position: absolute;
     top: 0;
-    left: 200px;
+    left: 175px;
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 18px; /* Adjust as needed to vertically center the text */
-    color: #fff; /* Text color */
-    pointer-events: none; /* Prevent text from interfering with clicking on progress bar */
+    line-height: 18px;
+    color: #fff;
+    pointer-events: none;
 }
 
 .progress-textc {
     position: absolute;
     top: 0;
-    left: 235px;
+    left: 210px;
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 18px; /* Adjust as needed to vertically center the text */
-    color: #fff; /* Text color */
-    pointer-events: none; /* Prevent text from interfering with clicking on progress bar */
+    line-height: 18px;
+    color: #fff;
+    pointer-events: none;
 }
 
 .progress-bar {
-    background-color: #000; /* Light gray background color */
-    height: 19px; /* Increase the height to make the progress bar taller */
+    background-color: #000;
+    height: 19px;
     border-radius: 5px;
-    border: 1px solid #ccc; /* Border around the progress bar */
-    position: relative; /* Needed for absolute positioning of progress-text */
+    border: 1px solid #ccc;
+    position: relative;
 }
-
 
 .progress {
     height: 100%;
     width: 0;
-    background-color: #3498db; /* Blue progress color */
+    background-color: #3498db;
     border-radius: 5px;
     transition: width 1s ease;
 }
 
-
 .progress-bar {
-    background-color: #f2f2f2; /* Light gray background color */
-    height: 20px; /* Increase the height to make the progress bar taller */
+    background-color: #f2f2f2;
+    height: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc; /* Border around the progress bar */
-    position: relative; /* Needed for absolute positioning of progress-text */
+    border: 1px solid #ccc;
+    position: relative;
     margin-bottom: 20px;
 }
 
-@media screen and (max-width:880px) {
-
-.skills-page {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .skills-page {
         overflow-x: hidden;
     }
     .navbar .lefta {
@@ -181,7 +185,7 @@ p {
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 60px; /* Adjust this value to control the distance from the top */
+        top: 60px;
         left: 0;
         width: 50%;
         z-index: 1;
@@ -196,7 +200,7 @@ p {
     }
 
     .navbar .lefta.active {
-        display: flex; /* Show the links when the .active class is added */
+        display: flex;
     }
 
     .menu-icon {
@@ -218,5 +222,55 @@ p {
 
     .menu-icon.active div:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .skill {
+        margin: 10px auto;
+        width: 80%;
+        padding: 10px;
+    }
+    
+    .skill:hover {
+        transform: none;
+        cursor: pointer;
+    }
+    .progress-text {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 18px;
+        color: #fff;
+        pointer-events: none;
+    }
+    
+    .progress-textw {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 18px;
+        color: #fff;
+        pointer-events: none;
+    }
+    
+    .progress-textc {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 18px;
+        color: #fff;
+        pointer-events: none;
     }
 }
