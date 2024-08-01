@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/css/contact.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
 </head>
 
 <body>
@@ -26,21 +28,36 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="contact-form">
-            <div class="left"></div>
-            <div class="right">
-                <h2>Contact Me</h2>
-                <form>
-                    <input type="text" class="field" name="name" placeholder="Your Name" required>
-                    <input type="email" class="field" name="email" placeholder="Your Email" required>
-                    <input type="number" class="field" name="number" placeholder="Your Phone Number" required>
-                    <textarea name="message" class="field area" rows="4" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="button">Send Message</button>
-                </form>
-            </div>
+    <div class="contact-container">
+        <div class="left-col">
+          <img class="logo" src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"/>
         </div>
-    </div>
+        <div class="right-col">
+          <div class="theme-switch-wrapper">
+          <!-- <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+        </label>
+        <div class="description">Dark Mode</div> -->
+      </div>
+          
+          <h1>Contact me</h1>
+          <p>Want a specialised website, feel free to send me a message let's talk. Can't wait to hear your idea.</p>
+          
+          <form id="contact-form" method="post" action="send_email.php">
+            <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="message">Message</label>
+        <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+            <button type="submit" id="submit" name="submit">Send</button>
+        
+      </form>
+      <div id="error"></div>
+      <div id="success-msg"></div>
+        </div>
+      </div>
     <script src="/script/contact.js"></script>
 
 </body>

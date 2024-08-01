@@ -1,7 +1,30 @@
-function toggleMenu() {
-    const menu = document.querySelector('.lefta');
-    const icon = document.querySelector('.menu-icon');
+const toggleSwitch = document.querySelector('#checkbox');
+const currentTheme = localStorage.getItem('theme');
 
-    menu.classList.toggle('active');
-    icon.classList.toggle('active');
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
 }
+
+toggleSwitch.addEventListener('change', function() {
+    if (toggleSwitch.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+toggleSwitch.addEventListener('change', function() {
+    console.log('Toggle switched:', toggleSwitch.checked);
+    if (toggleSwitch.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+});
