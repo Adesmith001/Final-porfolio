@@ -456,7 +456,7 @@ footer p {
     }
     .home-content {
         text-align: left;
-        padding-top: 400px;
+        padding-top: 300px;
     }
     .btn-box {
         width: 250px;
@@ -667,7 +667,7 @@ footer p {
   
       .footer-distributed .footer-left{
           font: bold 14px sans-serif;
-          margin-top: 550px;
+          margin-top: 400px;
           z-index: 1000;
       }
   
