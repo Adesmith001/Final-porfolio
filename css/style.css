@@ -399,6 +399,7 @@ footer p {
 @media screen and (min-width: 320px) and (max-width: 768px) {
     body {
         overflow-x: hidden;
+        overflow-y: hidden;
     }
     .navbar .lefta {
         display: none;
@@ -455,6 +456,7 @@ footer p {
     }
     .home-content {
         text-align: left;
+        padding-top: 400px;
     }
     .btn-box {
         width: 250px;
@@ -472,10 +474,16 @@ footer p {
         align-items: flex-start;
     }
     .home-sci a {
+        top: 0px;
         margin-right: 10px;
+        font-size: 20px;
     }
     .home-imgHover:hover {
         background: transparent;
+    }
+    #canvas{
+        height: 190vh;
+        z-index: 0;
     }
 }
 
@@ -610,7 +618,8 @@ footer p {
   }
   
   /* Footer Right */
-  
+
+
   .footer-distributed .footer-right{
       width: 20%;
   }
@@ -654,10 +663,12 @@ footer p {
   
   /* If you don't want the footer to be responsive, remove these media queries */
   
-  @media (max-width: 880px) {
+  @media (min-width: 320px) and (max-width: 768px) {
   
-      .footer-distributed{
+      .footer-distributed .footer-left{
           font: bold 14px sans-serif;
+          margin-top: 550px;
+          z-index: 1000;
       }
   
       .footer-distributed .footer-left,

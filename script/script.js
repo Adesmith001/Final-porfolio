@@ -61,7 +61,7 @@ function Box() {
     this.x = Math.floor((Math.random() * c.width) + 1);
     this.y = Math.floor((Math.random() * c.height) + 1);
     this.r = Math.random() * Math.PI;
-    this.shadow_length = 2000;
+    this.shadow_length = 5000;
     this.color = colors[Math.floor((Math.random() * colors.length))];
   
     this.getDots = function() {
@@ -168,7 +168,7 @@ function draw() {
 resize();
 draw();
 
-while (boxes.length < 14) {
+while (boxes.length < 30) {
     boxes.push(new Box());
 }
 
