@@ -400,6 +400,7 @@ footer p {
     body {
         overflow-x: hidden;
         overflow-y: hidden;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .navbar .lefta {
         display: none;
