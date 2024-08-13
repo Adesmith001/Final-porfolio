@@ -483,28 +483,101 @@ button {
         overflow-x: hidden;
     }
     .navbar .lefta {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 50%;
-        z-index: 1;
-        transition: 0.3s;
-    }
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 50%;
+      z-index: 1;
+      transition: 0.3s;
+  }
 
-    .navbar .lefta a {
-        display: block;
-        padding: 15px;
-        color: #fff;
-        text-align: center;
-        font-size: 16px;
-    }
+  .navbar .lefta a {
+      display: block;
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+  }
 
-    .navbar .lefta.active {
-        display: flex;
-    }
+  .navbar .lefta.active {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  .active {
+      background-color: #333;
+      border-radius: 20px;
+  }
+
+  .menu-icon.active div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-icon.active div:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-icon.active div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .card{
+    width: 85%;
+    height: 700px;
+  }
+
+  .thumbnail, .thumb{
+    height: 120px;
+    width: 240px;
+    left: 0px;
+  }
+
+  .right{
+    margin-left: 20px;
+  }
+  h5{
+    margin-bottom: 300px;
+    font-size: 50px;
+    left: 10px;
+  }
+  h6{
+    margin-bottom: 175px;
+    font-size: 30px;
+    left: 10px;
+  }
+  .xard{
+    width: 85%;
+    height: 900px;
+  }
+  .xlass h5{
+    margin-bottom: 230px;
+    font-size: 50px;
+    left: 10px;
+  }
+  .xlass h6{
+    margin-bottom: 130px;
+    font-size: 30px;
+    left: 10px;
+  }
+  li{
+    padding-right: 50px;
+    display: block;
+    margin-left: -70px;
+    width: 40px;
+  }
+  span.s1{
+    font-size: 2rem;
+    top: 100px;
+  }
+  span.s2{
+    font-size: 2rem;
+    top: 300px;
+  }
 }
 
 /* fotter */
