@@ -582,6 +582,48 @@ transform: rotate(60deg);
         color: #fff;
         pointer-events: none;
     }
+
+   /* Adjust hexagon size */
+.hover-notify{
+    text-align: left;
+    padding-left: 90px;
+}
+.hex-wrap {
+    width: 100px;  /* Reduced width */
+    height: 115px; /* Reduced height */
+    left: -130px;
+    top: -100px;
+}
+
+.hexagon, .hex-inner-1, .hex-inner-2 {
+    width: 100px;  /* Adjust width */
+    height: 115px; /* Adjust height */
+}
+
+/* Position code-description at the bottom */
+.code-display {
+    position: absolute;
+    bottom: 20px; /* Adjust position from bottom */
+    width: 100%;  /* Full width */
+    height: auto; /* Adjust height as needed */
+    color: #333;
+    padding: 20px;
+    background-color: transparent;/* Slight background for readability */
+}
+
+.code-description > div {
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 17px; /* Adjust font size */
+}
+
+.hex-wrap .label{
+    top: 50px;
+}
+.code-display::before{
+    top: -40px;
+    left: 20px;
+}
+
 }
 
 
