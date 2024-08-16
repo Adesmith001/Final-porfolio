@@ -495,7 +495,7 @@ transform: rotate(60deg);
         background-color: #333;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
         width: 50%;
         z-index: 1;
         transition: 0.3s;
@@ -506,6 +506,7 @@ transform: rotate(60deg);
         padding: 15px;
         color: #fff;
         text-align: center;
+        font-size: 16px;
     }
 
     .navbar .lefta.active {

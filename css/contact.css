@@ -48,7 +48,7 @@ body {
       min-width: 50px;
       height: 50px;
       margin-left: 5px;
-      z-index: 3;
+      /* z-index: 3; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -70,7 +70,7 @@ body {
     .icono-dos {
       min-width: 50px;
       height: 50px;
-      z-index: 3;
+      /* z-index: 3; */
       display: flex;
       margin-right: 5px;
       justify-content: center;
@@ -93,7 +93,7 @@ body {
       min-width: 50px;
       height: 50px;
       margin-right: 7px;
-      z-index: 3;
+      /* z-index: 3; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -139,7 +139,7 @@ body {
       min-width: 120px;
       height: 60px;
       margin-left: 5px;
-      z-index: 3;
+      /* z-index: 3; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -154,7 +154,7 @@ body {
     .byemail {
       min-width: 120px;
       height: 60px;
-      z-index: 3;
+      /* z-index: 3; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -169,7 +169,7 @@ body {
       min-width: 120px;
       height: 60px;
       margin-right: 7px;
-      z-index: 3;
+      /* z-index: 3; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -262,9 +262,9 @@ body {
         background-color: #333;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
         width: 50%;
-        z-index: 1;
+        z-index: 1000;
         transition: 0.3s;
     }
 
